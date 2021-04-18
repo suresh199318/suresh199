@@ -7,7 +7,7 @@
       "Description": "Name of an existing EC2 KeyPair to enable SSH access to the EC2 instance."
     },
 	"TagName": {
-      "Type": "AWS::EC2::KeyPair::KeyName",
+      "Type": "String",
       "Description": "Name of an existing EC2 KeyPair to enable SSH access to the EC2 instance."
     },
     "InstanceType": {
