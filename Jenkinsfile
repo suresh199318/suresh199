@@ -11,7 +11,21 @@ pipeline {
            
           }
        }
+    
+	  satge('post) {
+    always {
+
     }
+    success{
+
+    }
+    failure {
+
+    }
+    cleanup{
+        deleteDir()
+    }
+}
 	}
 	}
 
