@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_db_parameter_group" "custom" {
-  name   = "rds-pg"
+  name   = "customparametergroup"
   family = "mariadb10.4"
 
   parameter {
@@ -18,7 +18,7 @@ resource "aws_db_parameter_group" "custom" {
 }
 
 resource "aws_db_option_group" "example" {
-  name                     = "option-group-test-terraform"
+  name                     = "customoptiongroup"
   option_group_description = "Terraform Option Group"
   engine_name              = "mariadb"
   major_engine_version     = "10.4"
