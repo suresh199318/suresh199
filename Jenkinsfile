@@ -12,7 +12,7 @@ pipeline {
           }
        }
     
-	  satge('post) {
+	  satge('post') {
     always {
 
     }
