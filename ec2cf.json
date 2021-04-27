@@ -66,6 +66,7 @@
 			"#!/bin/bash","\n",
 			"\n","sudo su","\n",
                          "\n", "yum update -y","\n",
+			  "\n", "yum install mysql -y","\n",
 			 "\n", "yum install epel-release","\n",
 			 "\n", "amazon-linux-extras install nginx1","\n",
                           "\n", "systemctl start nginx"]]}
