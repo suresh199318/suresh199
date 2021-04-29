@@ -1,7 +1,7 @@
 pipeline {
    agent any
    stages {
-    stage('Deploy') {
+    stage('Terraform') {
       steps {
         script {
           sh 'PATH=/bin/terraform'
