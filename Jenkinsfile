@@ -1,7 +1,7 @@
 pipeline {
    agent any
    stages {
-    stage('Deploy') {
+    stage('Cloudforation') {
       steps {
         script {
                   
@@ -11,7 +11,7 @@ pipeline {
            }
        }
     	}
-     stage('Build') {
+     stage('clear-workspace') {
             steps {
                 // Clean before build
                 cleanWs()
