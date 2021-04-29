@@ -39,7 +39,7 @@ resource "aws_db_instance" "default" {
   instance_class       = "db.t2.micro"
   name                 = "mydbb"
   username             = "root"
-  password             = "foobarbaz"
+  password             = "adminbest"
   maintenance_window              = "Mon:00:00-Mon:03:00"
   backup_window                   = "03:00-06:00"
   parameter_group_name = "${aws_db_parameter_group.custom.name}"
