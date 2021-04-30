@@ -18,7 +18,7 @@ resource "aws_db_parameter_group" "custom" {
 }
 
 resource "aws_db_option_group" "example" {
-  name                     = "customoptiongroup"
+  name                     = "customoptgroup"
   option_group_description = "Terraform Option Group"
   engine_name              = "mariadb"
   major_engine_version     = "10.4"
