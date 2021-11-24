@@ -4,16 +4,21 @@ terraform {
 
         workspaces {
            name = "suresh199"
+             
+      required_providers {
+                        aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.0"
+    }
+}
 }
 }
 }
 
 provider "aws" {
   version = "~> 3.0"
-  region  = "us-east-2"
-  aws_access = "AKIASKQESGO24HU23R7K"
-  aws_secret = "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"
-}
+  region  = "us-east-1"
+  }
 
 resource "aws_db_parameter_group" "custom" {
   name   = "customparametergroup"
