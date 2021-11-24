@@ -11,6 +11,8 @@ terraform {
 provider "aws" {
   version = "~> 3.0"
   region  = "us-east-2"
+  aws_access = "AKIASKQESGO24HU23R7K"
+  aws_secret = "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"
 }
 
 resource "aws_db_parameter_group" "custom" {
