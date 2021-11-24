@@ -1,3 +1,13 @@
+terraform {
+     backend "remote" {
+        organizations = "suresh1993"
+
+        workspaces {
+           name = "suresh199"
+}
+}
+}
+
 provider "aws" {
   region  = "us-east-2"
 }
