@@ -1,6 +1,8 @@
 terraform {
      backend "remote" {
         organizations = "suresh1993"
+        aws_access = "AKIASKQESGO24HU23R7K"
+        aws_secret = "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"
 
         workspaces {
            name = "suresh199"
