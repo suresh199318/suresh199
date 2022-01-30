@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
                   
-		sh "aws cloudformation deploy --template-file ec2cf.json --stack-name=${stackname} --parameter-overrides InstanceType=${InstanceType} KeyName=${KeyName} TagName=${TagName} --region 'us-east-2'" 
+		sh "echo hello" 
 		
 	 // sh  "aws cloudformation delete-stack --stack-name teststack2"
            }
