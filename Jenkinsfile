@@ -5,11 +5,14 @@ pipeline {
       steps {
         script {
                   
-		sh "echo hello" 
+		sh '''
+		echo hello
 		
 		python3 --version
 		
 		python3 a.py
+		
+		'''
 		
 	 // sh  "aws cloudformation delete-stack --stack-name teststack2"
            }
