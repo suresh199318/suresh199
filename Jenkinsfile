@@ -1,5 +1,5 @@
 pipeline {
-	agent {label 'first'}
+	agent {label 'third'}
    stages {
     stage('Cloudforation') {
       steps {
