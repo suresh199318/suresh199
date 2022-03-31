@@ -8,20 +8,13 @@ pipeline {
     }
     
   
-    
-    parameters([
-                            choice(
-                                choices: ['ONE', 'TWO'], 
-                                name: 'first'
-                            )
-                            
-                ])
+
     
 
     stages {
         stage('first') {
             steps {
-                echo "First ${a} ${params.first}"
+                echo "First ${a}"
             }
         }
         stage('second') {
