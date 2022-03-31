@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    
+    environment {
+        a = "Suresh"
+        b = "Rajesh"
+        c = "Senthil"
+    }
+    
+
+    stages {
+        stage('first') {
+            steps {
+                echo "First ${a}"
+            }
+        }
+        stage('second') {
+            steps {
+                echo "Second ${b}"
+            }
+        }
+        stage('three') {
+            steps {
+                echo "Three ${c}"
+            }
+        }
+    }
+}
