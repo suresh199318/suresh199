@@ -1,5 +1,5 @@
 pipeline {
-    agent 'slave3'
+    agent { label 'slave3' }
     
     environment {
         a = "Suresh"
