@@ -7,11 +7,21 @@ pipeline {
         c = "Senthil"
     }
     
+  
+    
+    parameters([
+                            choice(
+                                choices: ['ONE', 'TWO'], 
+                                name: 'first'
+                            )
+                            
+                ])
+    
 
     stages {
         stage('first') {
             steps {
-                echo "First ${a}"
+                echo "First ${a} ${params.first}"
             }
         }
         stage('second') {
